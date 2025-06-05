@@ -21,15 +21,15 @@ The API exposes two main translation routes under the `/tutor` prefix, designed 
 - **Request body:**  
   ```json
   {
-    "text": "Swedish text here"
+    "text": "Jag vill lära mig arabiska"
   }
 
 - **Response example:**  
   ```json
   {
-    "english": "English intermediate translation",
-    "arabic_script": "النص العربي المترجم",
-    "arabic_translit": "al-nass al-‘arabī al-mutarjam"
+      "english": "I want to learn Arabic",
+      "arabic_script": "أريد أن أدرس اللغة العربية",
+      "arabic_translit": "أryd أn أdrs āllghh ālʿrbyh"
   }
 
 ## Local set-up
