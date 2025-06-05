@@ -4,7 +4,8 @@ A RESTful API built with FastAPI provides translation between Swedish and Arabic
 
 ## Features
 
-- Translate Swedish text to Arabic and vice versa
+- Translate Swedish text to Arabic
+- Translate English text to Arabic 
 - Powered by MarianMT models from Hugging Face
 
 ## API Endpoints
