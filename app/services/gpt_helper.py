@@ -7,7 +7,7 @@ client = OpenAI()
 def improve_translation_with_gpt(text: str, target_language: str = "Arabic") -> str:
     prompt = (
         f"Please improve the following {target_language} translation for fluency, "
-        f"clarity, and natural style. Keep the meaning unchanged:\n\n{text}"
+        f"clarity, and natural style. Keep the meaning unchanged but the gender of speaker is male:\n\n{text}"
     )
     
     response = client.chat.completions.create(

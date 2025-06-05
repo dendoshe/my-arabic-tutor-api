@@ -25,12 +25,11 @@ def translate_sv_to_ar(text_sv):
     print(f"Intermediate English translation: {english}")
     arabic = translate(english, en_ar_tokenizer, en_ar_model)
     print(f"Final Arabic translation: {arabic}")
-    return arabic, english
+    return text_sv, arabic, english
 
 def translate_en_to_ar(text_en):
     print(f"Starting English to Arabic translation for: {text_en}")
     arabic = translate(text_en, en_ar_tokenizer, en_ar_model)
     print(f"Translated Arabic text: {arabic}")
-    return arabic
-
+    return text_en, arabic
 
