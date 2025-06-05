@@ -4,3 +4,4 @@ transformers
 torch
 openai
 sentencepiece
+python-dotenv
