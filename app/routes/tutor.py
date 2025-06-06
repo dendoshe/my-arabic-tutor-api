@@ -6,7 +6,7 @@ from app.services.gpt_helper import improve_translation_with_gpt
 import os
 
 router = APIRouter(prefix="/tutor", tags=["Tutor"])
-USE_GPT = False; #os.getenv("USE_GPT", "false").lower() == "true"
+USE_GPT = os.getenv("USE_GPT", "false").lower() == "true"
 
 class TranslateRequest(BaseModel):
     text: str
