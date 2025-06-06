@@ -9,7 +9,7 @@ app = FastAPI(title="Swedish-Arabic Tutor API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://dendoshe.github.io/my-arabic-tutor"],
+    allow_origins=["http://localhost:3000", "https://dendoshe.github.io"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
