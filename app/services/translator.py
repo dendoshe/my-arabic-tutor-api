@@ -33,3 +33,10 @@ def translate_en_to_ar(text_en):
     print(f"Translated Arabic text: {arabic}")
     return text_en, arabic
 
+def transalte_en_to_ar_and_danish(text_en): 
+    print(f"Starting English to Arabic translation for: {text_en}")
+    arabic = translate(text_en, en_ar_tokenizer, en_ar_model)
+    danish = translate(text_en, en_ar_tokenizer, en_ar_model)
+    print(f"Translated Arabic text: {arabic}")
+    return text_en, arabic, danish
+
